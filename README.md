@@ -8,7 +8,7 @@ There is a tutorial in italian [here]().
 
 ## Windows ("easier" version)
 The only downside to this method is the large download that is required, other than this it should be easier because the folder structure is pre-made.
-1) Start by downloading [this compressed folder](https://drive.google.com/file/d/1T-vPVGNQviP7W43tICCdqE14tyS1FGQx/view?usp=sharing);
+1) Start by downloading [this compressed folder](https://drive.google.com/open?id=1ba9smJ6EyU7Ho2CajvDAVb4LB5ki_an7);
 2) Extract it somewhere on your computer (I suggest putting it in the root of the drive, for example C:\radon-detector-python, and perhaps rename it to something shorter);
 3) Install Anacoda from [here](https://anaconda.org/);
 4) Open a new Anaconda Prompt as Administrator; 
@@ -41,24 +41,4 @@ The only downside to this method is the large download that is required, other t
 2) Press START;
 3) The program should count and display the number of Radon traces it thinks there are in the image.
 
-## Windows
-1) Install Anacoda from [here](https://anaconda.org/)
-2) Clone my repository on your computer (I suggest putting it in the root of the drive, for example C:\radon-detector-python, and perhaps rename it to something shorter)
-3) Download [the tensorflow-models](https://github.com/tensorflow/models/tree/master/research) repository
-4) Copy the research folder from models-master into radon-detector-python folder
-5) Do this command
-    > https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html
-    Get-ChildItem object_detection/protos/*.proto | foreach {protoc "object_detection/protos/$($_.Name)" --python_out=.}
- compiles protobuf
->
-6) go into research folder
-    ```
-    python setup.py build
-    ```
-    ```
-    python setup.py install
-    ```
-
-7) Finally  cd.. then python radon_detector_v5.py
-8) Pray it works
 
